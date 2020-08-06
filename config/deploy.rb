@@ -3,7 +3,7 @@ lock "~> 3.14.1"
 
 set :application, "gururail"
 set :repo_url, "https://github.com/gsanthoshkrishna/gururail.git"
-set: use_sudo, true
+set :use_sudo, true
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
