@@ -21,7 +21,7 @@ end
 desc 'Running migration'
   task :db_migration do
     on roles(:app, :app_aws)  do |server|
-	    execute "cd #{current_path}; bundle exec rake db:migrate_aws"
+	    execute "cd #{current_path}; rails db:migrate"
     end
   end
 
