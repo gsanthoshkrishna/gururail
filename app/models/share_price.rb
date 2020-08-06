@@ -1,0 +1,2 @@
+class SharePrice < ApplicationRecord
+end
