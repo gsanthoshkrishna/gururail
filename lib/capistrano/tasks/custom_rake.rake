@@ -17,3 +17,11 @@ task :migrate_investguru do
         ActiveRecord::Migrator.migrate("./db/migrate")
 end
 
+
+desc 'Running migration'
+  task :db_migration do
+    on roles(:app, :app_aws)  do |server|
+	    execute "cd #{current_path}; bundle exec rake db:migrate_aws"
+    end
+  end
+
