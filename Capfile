@@ -13,9 +13,9 @@ require 'capistrano/rails'
 # or
 require "capistrano/scm/git"
 
-require 'capistrano/bundler' # Rails needs Bundler, right?
-require 'capistrano/rails/assets'
-require 'capistrano/rails/migrations'
+#require 'capistrano/bundler' # Rails needs Bundler, right?
+#require 'capistrano/rails/assets'
+#require 'capistrano/rails/migrations'
 
 install_plugin Capistrano::SCM::Git
 
