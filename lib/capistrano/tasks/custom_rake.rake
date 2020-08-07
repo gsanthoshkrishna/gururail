@@ -1,7 +1,7 @@
 desc "Print reminder about eating more fruit."
 task :apple do
   on roles(:app)  do |server|
-       execute "cap prod_test deploy"
+       execute "cd #{current_path} && bundle install && cap deploy"
   end
 end
 
