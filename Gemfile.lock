@@ -222,7 +222,7 @@ DEPENDENCIES
   capistrano-rails (~> 1.6)
   capybara (>= 2.15)
   jbuilder (~> 2.7)
-  listen (~> 3.2)
+  listen
   mysql2 (>= 0.4.4)
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.2)
@@ -239,3 +239,5 @@ DEPENDENCIES
 RUBY VERSION
    ruby 2.5.1p57
 
+BUNDLED WITH
+   1.16.2
