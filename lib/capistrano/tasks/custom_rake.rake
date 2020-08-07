@@ -5,6 +5,13 @@ task :apple do
   end
 end
 
+desc "Print reminder about eating more fruit."
+task :bundleinstall do
+  on roles(:app)  do |server|
+       execute "cd #{current_path} && bundle install"
+  end
+end
+
 '''desc "Hello."
 task :mytest do
   on roles(:app) do |server|
