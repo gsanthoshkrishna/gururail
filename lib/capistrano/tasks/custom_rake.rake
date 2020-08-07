@@ -1,7 +1,7 @@
 desc "Print reminder about eating more fruit."
 task :apple do
   on roles(:app)  do |server|
-       execute "cd #{current_path} && bundle install && rails db:migrate"
+       execute "cd #{current_path} && rails db:migrate"
   end
 end
 
