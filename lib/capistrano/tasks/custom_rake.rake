@@ -8,7 +8,7 @@ end
 desc "Print reminder about eating more fruit."
 task :bundleinstall do
   on roles(:app)  do |server|
-       execute "cd #{current_path} && bundle install"
+       execute "cd #{current_path} && bundle install && bundle exec rails db:migrate"
   end
 end
 
