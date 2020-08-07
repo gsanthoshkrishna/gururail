@@ -222,7 +222,7 @@ DEPENDENCIES
   capistrano-rails (~> 1.6)
   capybara (>= 2.15)
   jbuilder (~> 2.7)
-  listen
+  listen (~> 3.2)
   mysql2 (>= 0.4.4)
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.2)
