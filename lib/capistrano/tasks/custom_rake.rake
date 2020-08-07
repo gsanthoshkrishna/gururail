@@ -5,7 +5,7 @@ task :apple do
   end
 end
 
-desc "Hello."
+'''desc "Hello."
 task :mytest do
   on roles(:app) do |server|
           execute "hostname"
@@ -18,10 +18,11 @@ task :migrate_investguru do
 end
 
 
-desc 'Running migration'
+desc "Running migration"
   task :db_migration do
-    on roles(:app, :app_aws)  do |server|
-	    execute "cd #{current_path};rails db:migrate"
+    on roles(:app)  do |server|
+	    execute "cd #{current_path};bundle exec db:migrate"
     end
   end
 
+'''
